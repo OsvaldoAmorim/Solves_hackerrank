@@ -1,0 +1,15 @@
+#https://www.hackerrank.com/challenges/simple-array-sum/problem
+#By: Osvaldo Amorim
+#-------------------------------------------------
+
+def simpleArraySum(ar):
+    soma = ar[0]
+    count = 1
+    n = len(ar)
+    while count < n:
+        if n == 2:
+            return ar[0] + ar[1]
+        else:
+            soma = soma + ar[count]
+            count += 1
+    return soma
